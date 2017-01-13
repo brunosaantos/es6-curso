@@ -19,17 +19,22 @@
     const something = 'Guinness';
     const otherThing = 'Leprechaums';
 
-    function green(template, ...values) {
-        return template.reduce((accumulator, part, i) => {
-            return ` 
-                ${accumulator}
-                <span class="green">${values[i - 1].toUpperCase()}</span>
-                ${part}
-            `
-        });
-    }
+    // function green(template, city, something, otherThing) {
+    //   debugger;
+    // }
 
-    const ireland = green`I live in ${city} the city of ${something} and ${otherThing}!`;
+    // function green(template, ...values) {
+    //     return template.reduce((accumulator, part, i) => {
+    //         return `
+    //             ${accumulator}
+    //             <span class="green">${values[i - 1].toUpperCase()}</span>
+    //             ${part}
+    //         `
+    //     });
+    // }
+
+    // const ireland = green`I live in ${city} the city of ${something} and ${otherThing}!`;
+    const ireland = `I live in ${city} the city of ${something} and ${otherThing}!`;
 
     document.body.innerHTML = ireland;
 

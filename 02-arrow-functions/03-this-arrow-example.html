@@ -18,13 +18,13 @@
         },
 
         make: function() {
-            window.setTimeout(() => {
+            window.setTimeout(function () {
                 console.log( this.prepare() );
             }, 500);
         }
 
     };
-    
+
     const btn = document.getElementById('btn');
 
     btn.addEventListener('click', function() { sandwich.make() });
